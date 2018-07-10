@@ -11,7 +11,6 @@ if (file_exists('vendor/autoload.php')) {
 // Requires Function composer's autoload
 require('function/vendor/autoload.php');
 
-//$stdin = (string)fgets(STDIN);
 $stdin = file_get_contents("php://stdin");
 
 if(isValidJson(($stdin))){
